@@ -15,7 +15,6 @@ class LoginSerializer(serializers.Serializer):
     password = serializers.CharField()
     
     
-# accounts/serializers.py
 
 class CalculationInputSerializer(serializers.Serializer):
     dob = serializers.DateField()
@@ -23,6 +22,7 @@ class CalculationInputSerializer(serializers.Serializer):
     term = serializers.IntegerField()
     frequency = serializers.CharField()
     sum_assured = serializers.FloatField()
+    
 
 class CalculationResponseSerializer(serializers.ModelSerializer):
     class Meta:

@@ -2,6 +2,27 @@
 
 from datetime import date, datetime
 
+'''
+This service class handles the core business logic of your application:
+
+Validates input data
+Normalizes values
+Calculates user age
+Generates financial illustration (premium, bonus, maturity)
+
+👉 It follows clean architecture (service layer) → keeps logic separate from views.
+
+
+🔄 Working Flow
+API sends input data → service
+validate() → checks correctness
+normalize() → adjusts data (monthly → yearly)
+calculate_age() → calculates user age
+generate_illustration() → creates yearly financial breakdown
+Returns final result
+
+'''
+
 class IllustrationService:
 
     def execute(self, data):
